@@ -31,7 +31,7 @@ function agregarAlCarrito(id) {
     }
 
     guardarProductosCarrito(carrito);
-    renderBotonCarrito();    
+    renderBotonCarrito();     
 }
 
 function eliminarProducto(id) {

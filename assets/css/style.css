@@ -1,0 +1,53 @@
+.navbar-brand {
+  color: rgb(219, 219, 23);
+  font-family: cursive;
+  font-size: 30px;
+}
+.navbar-brand:hover {
+  color: rgb(219, 219, 23);
+}
+
+.container-fluid {
+  background-color: rgb(94, 67, 67);
+  width: 100%;
+}
+
+.nav-link {
+  color: rgb(219, 219, 23);
+}
+.nav-link:hover {
+  color: rgb(238, 238, 83);
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  background-color: rgb(219, 219, 23);
+}
+
+.btn.btn-primary {
+  background-color: rgb(94, 67, 67);
+  border-color: rgb(94, 67, 67);
+}
+.btn.btn-primary:hover {
+  background-color: rgb(219, 219, 23);
+  color: rgb(94, 67, 67);
+  border-color: rgb(219, 219, 23);
+}
+
+.btn.btn-primary.position-relative {
+  background-color: rgb(219, 219, 23);
+  color: rgb(94, 67, 67);
+}
+.btn.btn-primary.position-relative:hover {
+  background-color: rgb(238, 238, 83);
+}
+
+.btn.btn-outline-secondary {
+  background-color: rgb(219, 219, 23);
+  color: rgb(94, 67, 67);
+  border-color: rgb(219, 219, 23);
+}
+.btn.btn-outline-secondary:hover {
+  background-color: rgb(238, 238, 83);
+  color: rgb(94, 67, 67);
+}

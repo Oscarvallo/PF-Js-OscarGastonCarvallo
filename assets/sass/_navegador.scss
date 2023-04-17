@@ -1,0 +1,27 @@
+.navbar-brand{
+    color: $colorTextoNav;
+    font-family:cursive;
+    font-size: 30px;
+    &:hover{
+        color:$colorTextoNav
+    }
+}
+.container-fluid{
+    background-color: $colorprimario;
+    width: 100%;
+ 
+  
+}
+.nav-link{
+    color: $colorTextoNav;
+    &:hover{
+        color: $colorFondoCarrito;
+        transform: scale(1.1);
+    }
+
+    
+}
+.navbar-toggler{
+    background-color: $colorTextoNav;
+}
+

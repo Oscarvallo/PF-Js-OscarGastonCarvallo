@@ -12,9 +12,15 @@ function renderProductosCarrito() {
             salida += `<tr>
             <td><img src="${producto.imagen}" alt="${producto.nombre}" width="60" /></td>
             <td>${producto.nombre}</td>
-            <td>${producto.cantidad} X $${producto.precio}</td>
+            <td style="padding:0">
+            <button  id= restarUno><i class="bi bi-dash"></i></button>
+            </td>
+            <td style="padding:0;height:5px; width:5px">X${producto.cantidad} </td>
+            <td style="padding:0"> 
+            <button  id= sumarUno><i class="bi bi-plus-lg"></i></button>
+            </td>
             <td>$${producto.cantidad * producto.precio}</td>
-            <td class="text-end"><button class="btn btn-primary" onclick="eliminarProducto(${producto.id});" title="Eliminar Producto"><img src="/img/eliminar.png" alt="Eliminar Producto" width="16" /></button></td>
+            <td class="text-end"><button class="btn btn-primary" onclick="eliminarProducto(${producto.id});" title="Eliminar Producto"><i class="bi bi-trash3"></i></button></td>
             </tr>`;
         }
 
@@ -31,6 +37,9 @@ function renderProductosCarrito() {
 
     document.getElementById("productos").innerHTML = salida;
 }
+
+
+
 
 renderProductosCarrito();
 renderBotonCarrito();
