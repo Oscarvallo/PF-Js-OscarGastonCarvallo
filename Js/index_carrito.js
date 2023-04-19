@@ -61,5 +61,6 @@ btn.addEventListener("click", () => {
         popup.classList.remove("alert-danger");
         popup.classList.add("alert-success");
         popup.innerText = "Tu pedido fue procesado con éxito. ";
-    }, 1000);
+        
+    }, 2000);
 });
