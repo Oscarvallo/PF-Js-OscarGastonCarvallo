@@ -46,6 +46,20 @@ function renderProductosCarrito() {
 }
 
 
+
 renderProductosCarrito();
 renderBotonCarrito();
 
+const btn = document.querySelector("#comprar");
+const popup = document.querySelector("#popup_mensaje");
+
+btn.addEventListener("click", () => {
+    popup.classList.add("alert", "alert-danger");
+    popup.innerText = "Se esta procesando tu pedido..";
+
+    setTimeout(() => {
+        popup.classList.remove("alert-danger");
+        popup.classList.add("alert-success");
+        popup.innerText = "Tu pedido fue procesado con éxito. ";
+    }, 1000);
+});
