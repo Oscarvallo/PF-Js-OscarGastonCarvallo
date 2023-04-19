@@ -12,34 +12,40 @@ function renderProductosCarrito() {
             salida += `<tr>
             <td><img src="${producto.imagen}" alt="${producto.nombre}" width="60" /></td>
             <td>${producto.nombre}</td>
-            <td style="padding:0">
-            <button  id= restarUno><i class="bi bi-dash"></i></button>
-            </td>
-            <td style="padding:0;height:5px; width:5px">X${producto.cantidad} </td>
-            <td style="padding:0"> 
-            <button  id= sumarUno><i class="bi bi-plus-lg"></i></button>
-            </td>
+           
+            <td >X${producto.cantidad} </td>
+            
             <td>$${producto.cantidad * producto.precio}</td>
             <td class="text-end"><button class="btn btn-primary" onclick="eliminarProducto(${producto.id});" title="Eliminar Producto"><i class="bi bi-trash3"></i></button></td>
-            </tr>`;
+          
+            </tr>
+            `
+            ;
         }
+       
 
         salida += `<tr>
         <td colspan="3">Total a Pagar</td>
         <td>$${totalPagarCarrito()}</td>
         <td>&nbsp;</td>
         </tr>`;
+    
         salida += `</table>`;
+        salida += `<table class="table">
+        <tr>
+        <td colspan="5" class="text-end"><button id="comprar" class="btn btn-primary">Comprar</button></td>
+        <tr>`;
     } else {
         salida = `<div class="alert alert-danger text-center" role="alert">No hay productos en el carrito</div>
       `
     }
 
     document.getElementById("productos").innerHTML = salida;
+  
+  
 }
-
-
 
 
 renderProductosCarrito();
 renderBotonCarrito();
+

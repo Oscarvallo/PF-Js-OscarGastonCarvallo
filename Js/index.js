@@ -14,6 +14,7 @@ function renderProductos() {
         </div>`;
     }
 
+
     document.getElementById("productos").innerHTML = salida;
 }
 

@@ -18,3 +18,5 @@ function cargarProductosLS() {
 }
 
 guardarProductosLS(productos);
+
+
